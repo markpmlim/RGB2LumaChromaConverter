@@ -6,13 +6,12 @@ using namespace metal;
 // Full-range color format used for JPEG images
 // RGB to full-range yCbCr color conversion.
 constant float3x3 rgb2YCbCrTransform = float3x3(
-   float3(+0.2990, -0.1687, +0.5000),       // column0
+   float3(+0.2990, -0.1687, +0.5000),       // column 0
    float3(+0.5870, -0.3313, -0.4187),       // column 1
    float3(+0.1140, +0.5000, -0.0813)        // column 2
 );
 
-// Reverse conversion - we have to break into 2 parts because the colour offsets
-// must be subtracted before matrix multiplication.
+// Reverse conversion
 // Full-range yCbCr to RGB color conversion.
 constant float3x3 yCbCr2RGBTransform = float3x3(
       float3(+1.0000, +1.000000, +1.0000),
