@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEE894B42C1703CE00579F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE894B32C1703CE00579F1F /* AppDelegate.swift */; };
+		EEE894B62C1703CE00579F1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE894B52C1703CE00579F1F /* ViewController.swift */; };
+		EEE894B82C1703D000579F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE894B72C1703D000579F1F /* Assets.xcassets */; };
+		EEE894BB2C1703D000579F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE894B92C1703D000579F1F /* Main.storyboard */; };
+		EEE894C12C17046600579F1F /* RedFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = EE0921AD2BCF4615003540D5 /* RedFlower.png */; };
+		EEE894C32C17047600579F1F /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE894C22C17047600579F1F /* MetalRenderer.swift */; };
+		EEE894C62C1704C700579F1F /* rgb2yuv.metal in Sources */ = {isa = PBXBuildFile; fileRef = EEE894C52C1704C700579F1F /* rgb2yuv.metal */; };
+		EEE894C72C172EC300579F1F /* Flowers_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE4F67122C09FCCE00D72B69 /* Flowers_2.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE0921AD2BCF4615003540D5 /* RedFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RedFlower.png; path = Images/RedFlower.png; sourceTree = "<group>"; };
+		EE4F67122C09FCCE00D72B69 /* Flowers_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Flowers_2.jpg; path = Images/Flowers_2.jpg; sourceTree = "<group>"; };
+		EE8F025D2BDF59EA00A56362 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; wrapsLines = 1; };
+		EEE894B12C1703CE00579F1F /* RGBToLumaChromaConversion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBToLumaChromaConversion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE894B32C1703CE00579F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEE894B52C1703CE00579F1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEE894B72C1703D000579F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEE894BA2C1703D000579F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEE894BC2C1703D000579F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE894BD2C1703D000579F1F /* RGBToLumaChromaConversion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RGBToLumaChromaConversion.entitlements; sourceTree = "<group>"; };
+		EEE894C22C17047600579F1F /* MetalRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		EEE894C52C1704C700579F1F /* rgb2yuv.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = rgb2yuv.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEE894AE2C1703CE00579F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE9C006F2BB51EC50002EF6F = {
+			isa = PBXGroup;
+			children = (
+				EE8F025D2BDF59EA00A56362 /* Readme.md */,
+				EE9C00CD2BB524250002EF6F /* Images */,
+				EEE894B22C1703CE00579F1F /* LumaChromaRGBConversions */,
+				EE9C00792BB51EC50002EF6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE9C00792BB51EC50002EF6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEE894B12C1703CE00579F1F /* RGBToLumaChromaConversion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE9C00CD2BB524250002EF6F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE4F67122C09FCCE00D72B69 /* Flowers_2.jpg */,
+				EE0921AD2BCF4615003540D5 /* RedFlower.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EEE894B22C1703CE00579F1F /* LumaChromaRGBConversions */ = {
+			isa = PBXGroup;
+			children = (
+				EEE894B32C1703CE00579F1F /* AppDelegate.swift */,
+				EEE894C22C17047600579F1F /* MetalRenderer.swift */,
+				EEE894B52C1703CE00579F1F /* ViewController.swift */,
+				EEE894C42C1704AD00579F1F /* Shaders */,
+				EEE894B72C1703D000579F1F /* Assets.xcassets */,
+				EEE894B92C1703D000579F1F /* Main.storyboard */,
+				EEE894BC2C1703D000579F1F /* Info.plist */,
+				EEE894BD2C1703D000579F1F /* RGBToLumaChromaConversion.entitlements */,
+			);
+			path = LumaChromaRGBConversions;
+			sourceTree = "<group>";
+		};
+		EEE894C42C1704AD00579F1F /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				EEE894C52C1704C700579F1F /* rgb2yuv.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEE894B02C1703CE00579F1F /* RGBToLumaChromaConversion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE894C02C1703D000579F1F /* Build configuration list for PBXNativeTarget "RGBToLumaChromaConversion" */;
+			buildPhases = (
+				EEE894AD2C1703CE00579F1F /* Sources */,
+				EEE894AE2C1703CE00579F1F /* Frameworks */,
+				EEE894AF2C1703CE00579F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RGBToLumaChromaConversion;
+			productName = RGBToLumaChromaConversion;
+			productReference = EEE894B12C1703CE00579F1F /* RGBToLumaChromaConversion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE9C00702BB51EC50002EF6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Incremental Innovations";
+				TargetAttributes = {
+					EEE894B02C1703CE00579F1F = {
+						CreatedOnToolsVersion = 11.6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE9C00732BB51EC50002EF6F /* Build configuration list for PBXProject "LumaChromaRGBConversions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = EE9C006F2BB51EC50002EF6F;
+			productRefGroup = EE9C00792BB51EC50002EF6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEE894B02C1703CE00579F1F /* RGBToLumaChromaConversion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEE894AF2C1703CE00579F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE894B82C1703D000579F1F /* Assets.xcassets in Resources */,
+				EEE894BB2C1703D000579F1F /* Main.storyboard in Resources */,
+				EEE894C12C17046600579F1F /* RedFlower.png in Resources */,
+				EEE894C72C172EC300579F1F /* Flowers_2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEE894AD2C1703CE00579F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE894B62C1703CE00579F1F /* ViewController.swift in Sources */,
+				EEE894B42C1703CE00579F1F /* AppDelegate.swift in Sources */,
+				EEE894C32C17047600579F1F /* MetalRenderer.swift in Sources */,
+				EEE894C62C1704C700579F1F /* rgb2yuv.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEE894B92C1703D000579F1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE894BA2C1703D000579F1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE9C00852BB51EC60002EF6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE9C00862BB51EC60002EF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		EEE894BE2C1703D000579F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = RGBToLumaChromaConversion/RGBToLumaChromaConversion.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LumaChromaRGBConversions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = incremental.innovation.LumaChromaRGBConversions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EEE894BF2C1703D000579F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = RGBToLumaChromaConversion/RGBToLumaChromaConversion.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LumaChromaRGBConversions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = incremental.innovation.LumaChromaRGBConversions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE9C00732BB51EC50002EF6F /* Build configuration list for PBXProject "LumaChromaRGBConversions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9C00852BB51EC60002EF6F /* Debug */,
+				EE9C00862BB51EC60002EF6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE894C02C1703D000579F1F /* Build configuration list for PBXNativeTarget "RGBToLumaChromaConversion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE894BE2C1703D000579F1F /* Debug */,
+				EEE894BF2C1703D000579F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE9C00702BB51EC50002EF6F /* Project object */;
+}
